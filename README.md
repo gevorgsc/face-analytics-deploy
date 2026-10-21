@@ -78,3 +78,5 @@ Stop with `docker compose -f compose.yml down`; preserve the named volumes.
 Do not use `down -v` when retaining local data. Keep local environment and license
 keys out of Git. Third-party components retain their upstream terms.
 
+
+Post-publication anonymous download and fresh extraction results: [PUBLICATION_CHECK.json](PUBLICATION_CHECK.json).

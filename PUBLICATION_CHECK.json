@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/gevorgsc/face-analytics-deploy",
+  "visibility": "public",
+  "anonymous_source_files_verified": 352,
+  "anonymous_full_release_downloads_verified": true,
+  "fresh_setup_and_extraction_passed": true,
+  "all_139_original_backend_python_files_verified": true,
+  "all_1654_sdk_model_frontend_files_verified": true,
+  "production_state_absent": true,
+  "license_enforcement_enabled": true,
+  "fresh_source_commit": "b3b57eb7534985fb0b9f92326ae1d0a6439a6805",
+  "limits": "Docker build, Linux container startup, license activation and real devices require destination verification.",
+  "same_images": true,
+  "all_source_services_running": true,
+  "health_status": "ok"
+}
