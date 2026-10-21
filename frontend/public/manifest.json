@@ -1,0 +1,20 @@
+{
+  "name": "Face Analytics Pro",
+  "short_name": "FaceAnalytics",
+  "description": "GSC LLC Enterprise Face Analytics Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f1117",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/gsc-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["security", "business"],
+  "lang": "en"
+}

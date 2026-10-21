@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#3b82f6" />
+  <meta name="description" content="GSC LLC Enterprise Face Analytics Platform" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="FaceAnalytics" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/gsc-logo.svg" type="image/svg+xml" />
+  <title>Face Analytics Pro</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/App.jsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      if (window.location.port === '5173') {
+        navigator.serviceWorker.getRegistrations()
+          .then(registrations => Promise.all(registrations.map(registration => registration.unregister())))
+          .catch(() => {});
+        if ('caches' in window) {
+          caches.keys()
+            .then(keys => Promise.all(keys.filter(key => key.startsWith('fap-')).map(key => caches.delete(key))))
+            .catch(() => {});
+        }
+      } else {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' }).catch(() => {});
+        });
+      }
+    }
+  </script>
+</body>
+</html>

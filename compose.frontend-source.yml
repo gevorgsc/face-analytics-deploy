@@ -1,0 +1,6 @@
+services:
+  frontend:
+    build:
+      dockerfile: Dockerfile.frontend
+      args:
+        VITE_PRODUCT_MODULE: face

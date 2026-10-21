@@ -1,0 +1,2 @@
+# Preserve the exact captured bytes, including the source's existing CRLF files.
+* -text

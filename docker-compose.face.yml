@@ -1,0 +1,104 @@
+services:
+  postgres:
+    image: postgres:16-alpine@sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea
+    platform: linux/amd64
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Yerevan
+      POSTGRES_DB: face_analytics
+      POSTGRES_USER: ${POSTGRES_USER:-faceadmin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    volumes:
+      - face_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-faceadmin} -d face_analytics"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - face_net
+
+  redis:
+    environment:
+      - TZ=Asia/Yerevan
+    image: redis:7-alpine@sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499
+    platform: linux/amd64
+    restart: unless-stopped
+    command: redis-server --requirepass ${REDIS_PASSWORD:?Set REDIS_PASSWORD}
+    volumes:
+      - face_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:?Set REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    networks:
+      - face_net
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - backend/.env
+    environment:
+      TZ: Asia/Yerevan
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-faceadmin}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}@postgres:5432/face_analytics
+      REDIS_URL: redis://:${REDIS_PASSWORD:?Set REDIS_PASSWORD}@redis:6379/0
+      RATE_LIMIT_BACKEND: redis
+      TRUST_PROXY_HEADERS: "1"
+      ENABLE_API_DOCS: ${ENABLE_API_DOCS:-0}
+      MEDIA_MIN_FREE_GB: ${MEDIA_MIN_FREE_GB:-2}
+      MEDIA_MAX_GB: ${MEDIA_MAX_GB:-0}
+    volumes:
+      - face_media:/app/media
+      - face_backups:/app/backups
+      - face_exports:/app/exports
+      - face_runtime:/app/runtime
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8001}:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health')\""]
+      interval: 30s
+      timeout: 10s
+      start_period: 90s
+      retries: 3
+    networks:
+      - face_net
+
+  frontend:
+    environment:
+      - TZ=Asia/Yerevan
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend.snapshot
+      args:
+        VITE_PRODUCT_MODULE: face
+    platform: linux/amd64
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "${FRONTEND_PORT:-8081}:80"
+    networks:
+      - face_net
+
+volumes:
+  face_postgres_data:
+  face_redis_data:
+  face_media:
+  face_backups:
+  face_exports:
+  face_runtime:
+
+networks:
+  face_net:
+    driver: bridge

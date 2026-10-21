@@ -1,0 +1,27 @@
+{
+  "python": {
+    "tag": "python:3.11.15-slim-trixie",
+    "reference": "python:3.11.15-slim-trixie@sha256:90744cff8f32887f075c47d747a173ff333e9e98801667af93c357fa9f5e28ff",
+    "digest": "sha256:90744cff8f32887f075c47d747a173ff333e9e98801667af93c357fa9f5e28ff"
+  },
+  "nginx": {
+    "tag": "nginx:1.31.3-alpine",
+    "reference": "nginx:1.31.3-alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c1752",
+    "digest": "sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c1752"
+  },
+  "node": {
+    "tag": "node:24.16.0-alpine",
+    "reference": "node:24.16.0-alpine@sha256:21f403ab171f2dc89bad4dd69d7721bfd15f084ccb46cdd225f31f2bc59b5c9a",
+    "digest": "sha256:21f403ab171f2dc89bad4dd69d7721bfd15f084ccb46cdd225f31f2bc59b5c9a"
+  },
+  "postgres": {
+    "tag": "postgres:16-alpine",
+    "reference": "postgres:16-alpine@sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea",
+    "digest": "sha256:721873c34ceb9f8d8fc265984940dc982404c105f19ad51be9fdc5970a6080ea"
+  },
+  "redis": {
+    "tag": "redis:7-alpine",
+    "reference": "redis:7-alpine@sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499",
+    "digest": "sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499"
+  }
+}

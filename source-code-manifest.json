@@ -1,0 +1,558 @@
+[
+  {
+    "path": "backend/bootstrap_database.py",
+    "sha256": "ab20cc925d1d54452d70330a3aa0fb6ce138b41ecff394e4a2756463bfc12767"
+  },
+  {
+    "path": "backend/encrypt_camera_passwords.py",
+    "sha256": "c3872787ed2280e8b42df3f45c047339c423ddd80791d47fd26daf966156ecc0"
+  },
+  {
+    "path": "backend/migrate_audit_logs.py",
+    "sha256": "74ad0612ce9a34b90107c18ec8b43687d34e2d922d726c74528371a8b93b7b96"
+  },
+  {
+    "path": "backend/migrate_low_quality.py",
+    "sha256": "3dee3517c85148d82f31674b84be25ea93eb4d7846b36f4f71e303ba3f5ec82e"
+  },
+  {
+    "path": "backend/migrate_multiface_columns.py",
+    "sha256": "f4f710860c2d428c9d35bc00ccf23c8289fe70da43029692eaa9f199b356e59e"
+  },
+  {
+    "path": "backend/repair_missing_images.py",
+    "sha256": "8df3eea5331b8b96da9c93cdee87cb10e09bc53415758b328651fb371d781299"
+  },
+  {
+    "path": "backend/reset_face_data.py",
+    "sha256": "73318ce3a927dc1d5457e32057d10494dc26e3b4aba875f83a373fa910ecbe5b"
+  },
+  {
+    "path": "backend/restore_database.py",
+    "sha256": "c8b1c106d03f36351daf8626ade66ec45b2cb82ff46ae0f0c4e8f86107de4eba"
+  },
+  {
+    "path": "backend/alembic/env.py",
+    "sha256": "3c41912fd56e2eb1aa90b8a144e622337f2eb39e8662aa967ed60df6c1d2c664"
+  },
+  {
+    "path": "backend/alembic/versions/0001_in_out_direction.py",
+    "sha256": "08e733f4d3a56d2466471bd1b611fb0f309dc1838e601727e58a5bcc4b2fc2b7"
+  },
+  {
+    "path": "backend/alembic/versions/0002_enterprise_schema.py",
+    "sha256": "68f932a6c4baeec42cbee41f4a0b96bbd1cb287b6884bd461df6e4b30b648920"
+  },
+  {
+    "path": "backend/alembic/versions/0003_composite_indexes.py",
+    "sha256": "d73faf5249940e0ff05751b2890e5990f2d69522cfb1edc05e99739247df0d64"
+  },
+  {
+    "path": "backend/alembic/versions/0004_floor_maps.py",
+    "sha256": "0216560814f9dbabe81ad9b6f87df0ea0b476ad4324febb1fc73f2fcb8d59a8f"
+  },
+  {
+    "path": "backend/alembic/versions/0005_face_event_camera_id.py",
+    "sha256": "fd25c77d69b7df3a9e8b879da0dc853c396b853966ee8c343ff49c8a779e4caa"
+  },
+  {
+    "path": "backend/alembic/versions/0006_access_control_devices.py",
+    "sha256": "350330f63d1e8ff5d257f880adca0a2e0f4250eca03f1b1a1006dcb504ee3c58"
+  },
+  {
+    "path": "backend/alembic/versions/0007_acs_http_port.py",
+    "sha256": "d0c6210343b0fc633c863b9f7c854abe2cb4e5c34342cd23f69925b55b85c446"
+  },
+  {
+    "path": "backend/alembic/versions/0008_attendance_records.py",
+    "sha256": "e9d0aca3ec237ce83031b9971381ee209ff67d87e9c1bd95515d5ba3a6bedc08"
+  },
+  {
+    "path": "backend/alembic/versions/0009_card_visitor.py",
+    "sha256": "de687769199f429890c45751f3e26615d72555746663622d4c196ed41bc7f78b"
+  },
+  {
+    "path": "backend/alembic/versions/0010_access_levels.py",
+    "sha256": "1bdee4b0ebb965e5fe0d6b5eabf0d9e42fb48192c871b5aa6268cda0ffc15275"
+  },
+  {
+    "path": "backend/alembic/versions/0011_person_management.py",
+    "sha256": "d95e807b52f017321e8452149fe3ac692ae00372e446a720872e23880a4f1236"
+  },
+  {
+    "path": "backend/alembic/versions/0012_acs_event_details.py",
+    "sha256": "caaa33d5ac6d5c645fb420e7a980b2cbb65efb39a76292528b02d23cc3a2d5a5"
+  },
+  {
+    "path": "backend/alembic/versions/0013_person_source.py",
+    "sha256": "686ae8863f60a80f0d2cc0ca02f25038e3d6e44464718b0db5eee39006b4d110"
+  },
+  {
+    "path": "backend/alembic/versions/0014_person_card_numbers.py",
+    "sha256": "8a4d0ae13ed54627c28ad1ab6c7fb75a029d4fb5249595f9b4265a0791d92a22"
+  },
+  {
+    "path": "backend/alembic/versions/0015_person_fingerprints.py",
+    "sha256": "b7cec88f05b0800c23c67818551f75110fecec0a70405f5b7686ce82d8b320f0"
+  },
+  {
+    "path": "backend/alembic/versions/0016_access_limit_state.py",
+    "sha256": "703757b1549451afcb76137ac669000f5b71026db5adfb0bd00731cacb2aa3d1"
+  },
+  {
+    "path": "backend/alembic/versions/0017_full_attendance.py",
+    "sha256": "8cd07987dca77bb6d13377cf688211ddfd60900ffb97e75e8fe038de900457a1"
+  },
+  {
+    "path": "backend/alembic/versions/0018_hikcentral_workflows.py",
+    "sha256": "74d9e8c17f020127f4b3f4bb5f93d929841471a422db8ca935007463f796c69e"
+  },
+  {
+    "path": "backend/alembic/versions/0019_face_event_source.py",
+    "sha256": "c44d780e6293979a2570463a205d8552d8b85aa8984461ffd280d34829a6e7b8"
+  },
+  {
+    "path": "backend/alembic/versions/0020_access_level_schedules.py",
+    "sha256": "c9928d1dd280b50df9b3e1ad34a0eb9080b758b93fd24079dc4dc163e85f5638"
+  },
+  {
+    "path": "backend/alembic/versions/0021_antipassback_pairs.py",
+    "sha256": "6b3886da9ca57f7a9256cfd4238841dad3a11ab85dbc451b8200a715b90d4138"
+  },
+  {
+    "path": "backend/alembic/versions/0022_reporting_center.py",
+    "sha256": "56f80d6bfd4db70c88fd431f61d42c3f2d31026552e5208e07d590305334285d"
+  },
+  {
+    "path": "backend/alembic/versions/11524bebedc0_add_is_ordered_to_guard_tours.py",
+    "sha256": "35d5318bb9a44e16115aac692f7d9e458ad7ed3e848c5916689ef52ac0649d94"
+  },
+  {
+    "path": "backend/alembic/versions/1d375cba7bc4_add_description_to_dual_auth_rules.py",
+    "sha256": "6366c2b593e95f1a4fcb1c5ede7a7d4775173b4a3b3619a95b5e3e65e4342c7f"
+  },
+  {
+    "path": "backend/alembic/versions/309e2631e5f7_add_extended_acs_feature_tables.py",
+    "sha256": "f1a1f4b8d594dd7b20ddc3dc3729e8c5552d90466cc29926dcf5fdae953de863"
+  },
+  {
+    "path": "backend/alembic/versions/aa6aae30ba93_composite_indexes.py",
+    "sha256": "ff56dedcd4bf81db3b2457aa3ef49f74cf5640b46bbd51d1f9c986f3180774dd"
+  },
+  {
+    "path": "backend/app/acs_access_limit.py",
+    "sha256": "77284f778eea7de4145a77fc8f17635e58a2224f3ec29632709a38504ff05d44"
+  },
+  {
+    "path": "backend/app/acs_attendance.py",
+    "sha256": "71e5d9e93f0f781bbcf3aa582913f4ba5d914eec7ff57f2a760d723e803f3864"
+  },
+  {
+    "path": "backend/app/acs_notifications.py",
+    "sha256": "0c7f6a8e706a75a818725028fb05a9d1d0cbced2052359384186643e07a4b3d1"
+  },
+  {
+    "path": "backend/app/acs_offline.py",
+    "sha256": "1aaf512cd72edffc5fe7b873299d41a4f20a6b3e20a17acebbbc1f7adf33d8d4"
+  },
+  {
+    "path": "backend/app/acs_person_service.py",
+    "sha256": "aa0537e6369bbf691fb682de58d14fb8bbb74ed082478c18d7e702b04650de00"
+  },
+  {
+    "path": "backend/app/acs_schedule.py",
+    "sha256": "926bbcd501005a191783dea75397986f56510171da1d4f69cd6deffb0622305a"
+  },
+  {
+    "path": "backend/app/age_gender.py",
+    "sha256": "7a61acaa629dd55632b1708053317ea0a6fb9589a204b3f432ace6bdf50d19f1"
+  },
+  {
+    "path": "backend/app/alert_engine.py",
+    "sha256": "ffd6a1bc2881fc7a8ba88638633ec695caa269e692a2557da201eeb74f610382"
+  },
+  {
+    "path": "backend/app/analytics.py",
+    "sha256": "3ad2a4377622da5c63eba3a41e2e5beac9d355e1fd5db3433f97db79efcfd046"
+  },
+  {
+    "path": "backend/app/attendance_engine.py",
+    "sha256": "569a0215fa1c2fbf4bcb0bf78ffd4237d6d09bf6ad03039e87968b4cf08d9ce5"
+  },
+  {
+    "path": "backend/app/auth.py",
+    "sha256": "0001e1137a6633a47f88f01aeea83ea310dda99b991643aff97063851979366a"
+  },
+  {
+    "path": "backend/app/auth_rate_limit.py",
+    "sha256": "bfbc3f6a927102c81b3de0104405aa29c2e0ae91e552c931796a8c5f45015afb"
+  },
+  {
+    "path": "backend/app/backup.py",
+    "sha256": "846e935a9247c9f456ad6855dbcea5291b7a00ce5e3da0e4670865451a90a917"
+  },
+  {
+    "path": "backend/app/cache.py",
+    "sha256": "09ff7176717d4ea5b5e69328f2a8958e88f0403e344c6fe1145b12d24d3dc749"
+  },
+  {
+    "path": "backend/app/camera_pool.py",
+    "sha256": "e311a2b3547e7a85f79dfe71e9b4e574fcb88410bee8d984ff04bbd4e276238c"
+  },
+  {
+    "path": "backend/app/camera_utils.py",
+    "sha256": "c8723351249eade5ddbfdd126ddc8e9116c05141540d3e307b524f732b89e13b"
+  },
+  {
+    "path": "backend/app/celery_app.py",
+    "sha256": "6626a47c324600bc3df29f4cd530b2770a900d208611bcb942082aa148051003"
+  },
+  {
+    "path": "backend/app/cleanup.py",
+    "sha256": "128fc95ef53b5fcfe234d28163aed41036ff92b4bbffd3fc6d11730d68aadaa9"
+  },
+  {
+    "path": "backend/app/config.py",
+    "sha256": "6d7668da673eb70869c05ba58922f18918386d664f4e73273bac078c167064e1"
+  },
+  {
+    "path": "backend/app/csrf_middleware.py",
+    "sha256": "0d6dd86f6e9b88aa4d019f833a112ee6bcafca956c9d70f6a60935a4f5b9b43f"
+  },
+  {
+    "path": "backend/app/db.py",
+    "sha256": "a2fd0549e4ad72fda80b581b13cdcfc2ce2a4cc831ce506da5344f0e3ce1ff57"
+  },
+  {
+    "path": "backend/app/distributed.py",
+    "sha256": "7d3d523de0587cd1754de69a9137b4fcef6cbaa18c97bf2e4e2a4e18743e3238"
+  },
+  {
+    "path": "backend/app/door_engine.py",
+    "sha256": "60a07f3f5694c0e8eea079c5c5dfaef60402fb791bc9c7586a6dd9bb26bf1048"
+  },
+  {
+    "path": "backend/app/env.py",
+    "sha256": "f4fa1625a2cac6b2c25f19d775d2bc0632127cd1f7c7eddebc2a6a14c28a6bd3"
+  },
+  {
+    "path": "backend/app/exports.py",
+    "sha256": "74b28697fe4937d1e4c94ea0c6c3ca82da9f5dc58e0714815e27a0dd7660d9ed"
+  },
+  {
+    "path": "backend/app/face_door_engine.py",
+    "sha256": "bc10b1f91a196dfb31ef3fade00ea04e13306b2b82585c75f8cbc5de380c13ad"
+  },
+  {
+    "path": "backend/app/face_engine.py",
+    "sha256": "e50c1942d04a69afbe59dd7463002ea20d15ea6f9a91bac9bd59c8b40403e08c"
+  },
+  {
+    "path": "backend/app/faiss_engine.py",
+    "sha256": "41fa795c8676adde5380c83f387d639ca3c29d5be42a3377fc3cf26aaaba18da"
+  },
+  {
+    "path": "backend/app/hikcentral_client.py",
+    "sha256": "f48056486170f0b12337958ac303bc9dc5e6611ef9801691641ef02693fc758f"
+  },
+  {
+    "path": "backend/app/hiksdk_client.py",
+    "sha256": "d6305a0f749a904f17bd0710fc4cecc5576eca10c44a8b905dd7267f808e767d"
+  },
+  {
+    "path": "backend/app/isapi_acs.py",
+    "sha256": "13dcb60223122c83cbf7b72647cbb17b3ebc87463db1992370d178b2811cb714"
+  },
+  {
+    "path": "backend/app/isapi_client.py",
+    "sha256": "4ee7435a998c45ae14733940f311111d5f90ab77317d500705c5498e775e3d6f"
+  },
+  {
+    "path": "backend/app/job_queue.py",
+    "sha256": "dbb12e4ed3bfe6205de2f5c69b36ee2c533d5c4a9be5d3dfeae7b971562f8228"
+  },
+  {
+    "path": "backend/app/ldap_client.py",
+    "sha256": "9588cdde243ef9134a3faecbe87103b37b68826c519c442fdb3f3a7050a0698c"
+  },
+  {
+    "path": "backend/app/licensing.py",
+    "sha256": "20f1033ec0a897f9d564703fd99dafa03368520a3bf2fbe71e7b01940f2fc737"
+  },
+  {
+    "path": "backend/app/logging_utils.py",
+    "sha256": "502a8e42f69e19ad5dc4130deadb3f92b7449be391fcaf441bc56f8f4d09ccc6"
+  },
+  {
+    "path": "backend/app/main.py",
+    "sha256": "6283da204bfa13302f8b6700a881202cc9f44f9245f1dad52ed9d9be3d1203da"
+  },
+  {
+    "path": "backend/app/media_security.py",
+    "sha256": "44c71bfe41cd7325667b90fe2a9df62d6285ad538630dd1f2b87771148e14f37"
+  },
+  {
+    "path": "backend/app/metrics.py",
+    "sha256": "dc041895e2d2590aa343c520e65fc70c1d0bc21d4e6e92a3cd276648066cbffb"
+  },
+  {
+    "path": "backend/app/migrate_audit_logs.py",
+    "sha256": "7b8c2012061c6246791187e2916b1c301a6db1e44b322698bc657307a99be4af"
+  },
+  {
+    "path": "backend/app/migrate_direction.py",
+    "sha256": "fe5ade87d7535245e0ea16b93b8e4425dbfbf67e00cb4d59d330b5cc20b48a4a"
+  },
+  {
+    "path": "backend/app/migrate_multiface_columns.py",
+    "sha256": "f4f710860c2d428c9d35bc00ccf23c8289fe70da43029692eaa9f199b356e59e"
+  },
+  {
+    "path": "backend/app/models.py",
+    "sha256": "c0bdefc3904f396159c088bcd7e70a79549fc56b9c4c057cf4338d761c47dcd6"
+  },
+  {
+    "path": "backend/app/onvif_client.py",
+    "sha256": "0fb1a3ce7d187ee90ca43124462d43f0666788dc0e651a66805c865aa93e9bd8"
+  },
+  {
+    "path": "backend/app/operations.py",
+    "sha256": "56388a0abf93d4d8c922723ca5f8b7ff26b4b8d7d09ddef3b891ebbc7f05f06e"
+  },
+  {
+    "path": "backend/app/pagination.py",
+    "sha256": "a82baae7ac3c12f18cfad6c1c98fc574110d52c67f00c4f1a8c281b1ad0448bc"
+  },
+  {
+    "path": "backend/app/rate_limit.py",
+    "sha256": "59a0edaa4ca80ce4f0f12eac064404e3749b6fd72327e0ba56ad930d0c065650"
+  },
+  {
+    "path": "backend/app/report_scheduler.py",
+    "sha256": "dcaca62b8500f8c2c4c10ba5cd6e44034d8c08ce74577f83e66702eb5f79229f"
+  },
+  {
+    "path": "backend/app/schemas.py",
+    "sha256": "1055092abe0d0cb31a3fae09937960ef39caefc93bb4df6dbdf3e5a81cf72ea4"
+  },
+  {
+    "path": "backend/app/secrets.py",
+    "sha256": "ab22cdeae0fa5e55325c97313085f6c127b48b3f4776228a6bd92b6f18b9e37d"
+  },
+  {
+    "path": "backend/app/tasks.py",
+    "sha256": "12fcb2753561d074a2a604370fd8ec167355468ef55ffea4f892a6d9b47077e8"
+  },
+  {
+    "path": "backend/app/user_permissions.py",
+    "sha256": "3e0c976e65766cc435adb2112a59237d6b6d921fa9302f9425292061166945cc"
+  },
+  {
+    "path": "backend/app/utils.py",
+    "sha256": "6cfde6d8bbe4746be2868e900089d668809ae48222e1255da1856bf320fe5624"
+  },
+  {
+    "path": "backend/app/webhook_engine.py",
+    "sha256": "dd9c2ba2f069cc235583b86d12b71494bf6b38e50681e05ef28447179f9553eb"
+  },
+  {
+    "path": "backend/app/ws_manager.py",
+    "sha256": "78d1de0a36cb2740ca139c6af79722820536375574e9df35a98c96412339fdc7"
+  },
+  {
+    "path": "backend/app/routers/access_control.py",
+    "sha256": "a02481ac79bf89720bc74274b766f17f233e0e613a6f924229cf3c0e2f4dc31e"
+  },
+  {
+    "path": "backend/app/routers/acs_access_levels.py",
+    "sha256": "fb17e9492d2bfcd52f344b38c4d071c9ad142da52e2c73ba5204deb51dfb326d"
+  },
+  {
+    "path": "backend/app/routers/acs_access_requests.py",
+    "sha256": "f2ba670e782badac0f672d8e9cd500e1692e8afb1e7efb097d2b7c01d0e246e1"
+  },
+  {
+    "path": "backend/app/routers/acs_analytics.py",
+    "sha256": "837c74d00ec588e65e0bd582df1d7d8ebc4ea0f987f22b8cbdb5568f363f03ec"
+  },
+  {
+    "path": "backend/app/routers/acs_anti_passback.py",
+    "sha256": "b9f0a1c4c5b582c300987523d4da727a5d8a441bbbfe75f6308c6892b79d1bee"
+  },
+  {
+    "path": "backend/app/routers/acs_audit_report.py",
+    "sha256": "eb27fba672f5ae820494b489a7c8502b87c74d2890cf23e45e005f1ada76cc83"
+  },
+  {
+    "path": "backend/app/routers/acs_bulk_import.py",
+    "sha256": "b8dce03d897454815530986da2641e15985555b145104f34322d1ac225d00778"
+  },
+  {
+    "path": "backend/app/routers/acs_cards.py",
+    "sha256": "5f836d7f6843c04eb85796d1eb04e95ede99833c4479acc16f82e9571258a6e8"
+  },
+  {
+    "path": "backend/app/routers/acs_config.py",
+    "sha256": "b5c7b6af3624659a3e9920d103bf060301b91c24a4242eab8cdbd6daa6a97b95"
+  },
+  {
+    "path": "backend/app/routers/acs_credential_health.py",
+    "sha256": "5623caf755686eb5dc1b48971cbbec59884a3eb5c44690598870081fa16c65ac"
+  },
+  {
+    "path": "backend/app/routers/acs_door_camera.py",
+    "sha256": "63f07ab3fca320f8b357772aa713b5fd54b1097369085936bfae0fee593fefaf"
+  },
+  {
+    "path": "backend/app/routers/acs_dual_auth.py",
+    "sha256": "a727971ace9df2950aa68ffe8c6773eca0d3d187e22296e40789cc776041a2bb"
+  },
+  {
+    "path": "backend/app/routers/acs_guard_tour.py",
+    "sha256": "b3170c33bce5b678c4e3411c17ea5bd3ea42cdf476044169f2e42e854ca5f1e7"
+  },
+  {
+    "path": "backend/app/routers/acs_holidays.py",
+    "sha256": "46ee09b4d5b6b55991afba2361358e79ef646f895bb9ba2536674d882664ba8a"
+  },
+  {
+    "path": "backend/app/routers/acs_lift.py",
+    "sha256": "337439c43f932747e0ae24e2db2538409db1fb033a0a33096da6536e0827c8b1"
+  },
+  {
+    "path": "backend/app/routers/acs_mobile_cards.py",
+    "sha256": "4353f92aad2404fa7cd8185e9feaba7c385cbc9dd88c1b563a3f8881b8ad79eb"
+  },
+  {
+    "path": "backend/app/routers/acs_mustering.py",
+    "sha256": "9033fc5d1ab621e1bdcb8a8c6650c5fa5d3d1362e65dd6f91cb8b2f8c4ce1429"
+  },
+  {
+    "path": "backend/app/routers/acs_occupancy.py",
+    "sha256": "e5e546565bad3fac890d70638bbe7433747d8d6594173a64788822a5963677ab"
+  },
+  {
+    "path": "backend/app/routers/acs_person_management.py",
+    "sha256": "4f4badf799df7a5abeb6e22934fb3805c9a9830141e99cb72b189d02e0dec984"
+  },
+  {
+    "path": "backend/app/routers/acs_policy_templates.py",
+    "sha256": "224eff8b8fa1125a0e1e084bf31bef833f1d8f61552c54c4d329d1d16f5e96df"
+  },
+  {
+    "path": "backend/app/routers/acs_tailgating.py",
+    "sha256": "44e53c93fb900efc934a877c35599ddf35a0d26718200cdddd0831e2463120db"
+  },
+  {
+    "path": "backend/app/routers/acs_visitors.py",
+    "sha256": "976e21e36ac6e0d0ca7ba89a592198f73c770b9f3182c1262a8e235c52ad3756"
+  },
+  {
+    "path": "backend/app/routers/admin.py",
+    "sha256": "0166f5fd03d33bac48ee03171af762321874e640d3028030552d056bebbb60b2"
+  },
+  {
+    "path": "backend/app/routers/alerts.py",
+    "sha256": "63474d48ca7dc8c9012d2c37995f347c19ebb9d4f99096681e056be2bcdcb528"
+  },
+  {
+    "path": "backend/app/routers/attendance_pro.py",
+    "sha256": "552440a4877efe47adb4e6df0c15393c493db6940f021c05fe19fe24ec6f21a5"
+  },
+  {
+    "path": "backend/app/routers/attendance_rules.py",
+    "sha256": "a1ef58960f9e700b87b69340a4ecca231c67c560af1f10be48c91a2d7939be69"
+  },
+  {
+    "path": "backend/app/routers/auth.py",
+    "sha256": "559b4792dce25b7c800fda0bae0368d35bd4a716ed11968d9e7f6682aa4d554e"
+  },
+  {
+    "path": "backend/app/routers/cameras.py",
+    "sha256": "20a6e01325651a625a0cb72a16b4d5ffe241751eb257fdc83e896249a74e5a69"
+  },
+  {
+    "path": "backend/app/routers/doors.py",
+    "sha256": "c4d1d5c39841699052a155c1d8fec9e6033de3a5fdc4d0b2a89ec58a1235271e"
+  },
+  {
+    "path": "backend/app/routers/events.py",
+    "sha256": "11d49fd056726807343d9fc06b4bedf7bd1bfd4c70f62d719be0c1a0f72bf53b"
+  },
+  {
+    "path": "backend/app/routers/face_door.py",
+    "sha256": "3317396723bc01af182dc54d029a5600b958e3eb879c6083b36b1b99d3b285bc"
+  },
+  {
+    "path": "backend/app/routers/hikcentral.py",
+    "sha256": "21b0541c907ad85383a6f52778b3c0da2f6a56654e5b9c1ceba7ed2608fa461e"
+  },
+  {
+    "path": "backend/app/routers/ldap_sso.py",
+    "sha256": "cf5d454e5149a408898b959ed0bc4979d4ed0b77fcbc1f84dea5809485201e78"
+  },
+  {
+    "path": "backend/app/routers/licenses.py",
+    "sha256": "3f34154798b225631f71f2b2c131af17b9b9b336118696d2d8962b736fb234cb"
+  },
+  {
+    "path": "backend/app/routers/maps.py",
+    "sha256": "5e104c9513f75378a537a9c8fee32ce7f1c424605c3294c18e9efe0ecb9c54bd"
+  },
+  {
+    "path": "backend/app/routers/permissions.py",
+    "sha256": "c2d9c3db27fbb547ddc4c8255eb28f3dd3369e6a911866b0263ea5d3645af647"
+  },
+  {
+    "path": "backend/app/routers/persons.py",
+    "sha256": "b9c9dec8b58e4bc5a07cf093ac44539dffd480ba3c111a5498040fafe267a270"
+  },
+  {
+    "path": "backend/app/routers/reports.py",
+    "sha256": "1089f2be3f60f8da7fecdf28b56a35650c8f1c2df8d2e13f16823156580220a1"
+  },
+  {
+    "path": "backend/app/routers/settings.py",
+    "sha256": "94d698fbd9c25420ce8a6236e325a8bb43de9c250549f6091dd5c20d3336d738"
+  },
+  {
+    "path": "backend/app/routers/users_auth.py",
+    "sha256": "a4cfe8ff6753b345371720918d6c003133bd38d584fd6caa84f3e316c5de8282"
+  },
+  {
+    "path": "backend/app/routers/video_archive.py",
+    "sha256": "17af010b18e9f3a83c4e65d23e19e0c6853152826994245ef3473fe68c31e92d"
+  },
+  {
+    "path": "backend/app/routers/visitor_kiosk.py",
+    "sha256": "d85d272dba1571c855456f0b82d25bd1e618d11eaaa1642978b1f77bd86ebc49"
+  },
+  {
+    "path": "backend/app/routers/webhooks.py",
+    "sha256": "b22b16af1273736db26c7e23e3e2ace1450271c4a401abb04cb52168e4fc4e0c"
+  },
+  {
+    "path": "backend/app/routers/webrtc.py",
+    "sha256": "0f00f3e72ca5f18a948e4812694c985d7237d857ba2b6cabaacbbb05a771ab06"
+  },
+  {
+    "path": "backend/app/routers/zones.py",
+    "sha256": "48c8138273c53dd776bdc648b677d565930d75bb119053142d2db7f565a40d4e"
+  },
+  {
+    "path": "backend/app/routers/__init__.py",
+    "sha256": "2af8dd88e71ca6607313f68c3a199f67c355d196c672f8b073de7269cdd26ecc"
+  },
+  {
+    "path": "backend/tools/activation_manager_gui.py",
+    "sha256": "1ee86e570ae4e5d2b812a02de8f9869f33aee4c34feb96e307e300c64cab61fa"
+  },
+  {
+    "path": "backend/tools/license_admin.py",
+    "sha256": "5112e5717933a4c27a4d947b32f41a3434f8a648f3bbd35c4ecda4df108b0e83"
+  },
+  {
+    "path": "backend/tools/license_manager_gui.py",
+    "sha256": "08c00cb89f7382a7aa3c881e1ab40135558a5ef7b2f89fa3bf00f00a9f962991"
+  }
+]

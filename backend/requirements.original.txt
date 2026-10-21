@@ -1,0 +1,42 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.34
+alembic==1.13.3
+psycopg2-binary==2.9.12
+python-multipart==0.0.9
+pillow==10.4.0
+numpy==2.1.1
+opencv-python-headless==4.10.0.84
+
+# Auth
+bcrypt==5.0.0
+python-jose[cryptography]==3.5.0
+python-dotenv==1.2.2
+cryptography>=46.0.0,<49.0.0
+redis==5.0.8
+
+# Face AI
+insightface==1.0.1
+faiss-cpu==1.14.2
+
+# Exports
+reportlab==4.5.1
+openpyxl==3.1.5
+qrcode[pil]==8.0
+
+# Tests
+pytest==8.3.3
+pytest-asyncio==0.23.8
+httpx==0.27.0
+
+# Enterprise features
+ldap3==2.9.1
+celery[redis]==5.4.0
+flower==2.0.1
+
+# WebRTC
+aiortc==1.9.0
+aioice==0.9.0
+
+# Monitoring
+prometheus-client==0.20.0
